@@ -120,7 +120,7 @@ public class Helper
         {
             try
             {
-                if (!configFile.getParentFile().mkdirs() && !configFile.createNewFile())
+                if (!(configFile.getParentFile().mkdirs() && configFile.createNewFile()))
                 {
                     System.out.println("Could not create lang.yml!");
                 }

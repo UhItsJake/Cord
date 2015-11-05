@@ -6,7 +6,7 @@
 
 	<groupId>co.sysvoid</groupId>
 	<artifactId>cord</artifactId>
-	<version>1.1.1</version>
+	<version>1.1.2</version>
 
 	<repositories>
 		<repository>
