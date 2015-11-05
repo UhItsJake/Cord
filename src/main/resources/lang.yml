@@ -1,0 +1,23 @@
+# Note: where punctuation is missing, it's intentinoal. Do not add extra punctuation to the end of strings.
+# Seriously. Read the note.
+
+in_maintenance: 'We're currently in maintenance mode!'
+adds_server: 'Adds a server'
+removes_server: 'Removes a server'
+clear_fallback: 'Clears players from a server [and sends players to the fallback server]'
+toggles_maintenance: 'Toggles maintenance mode'
+invalid_port: 'Invalid port specified.'
+added_successfully: 'Server added successfully!'
+already_exists: 'Failed to add server: does it already exist?'
+removed_successfully: 'Successfully removed server!'
+does_it_exist: 'Failed to remove server: does it exist?'
+fallback_404: 'Fallback server not found.'
+cleared_fallback: 'Your server has been cleared and you have been connected to a fallback server.'
+cleared_successfully: 'Successfully cleared server!'
+cleared_disconnect: 'Server was cleared, please rejoin.'
+enabled: 'ENABLED'
+disabled: 'DISABLED'
+maintenance_has_been: 'Maintenance mode has been'
+unavailable_console: 'This command is unavailable in the console, sorry!'
+
+# Did you read the note at the top?
