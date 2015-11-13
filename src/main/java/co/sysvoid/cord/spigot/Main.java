@@ -12,6 +12,7 @@ public class Main extends JavaPlugin
         getLogger().info("Enabled");
         Main.instance = this;
 
+        getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
         getServer().getMessenger().registerOutgoingPluginChannel(this, "Cord");
         getServer().getMessenger().registerIncomingPluginChannel(this, "Cord", new MessageListener());
     }

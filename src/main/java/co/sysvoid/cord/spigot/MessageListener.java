@@ -28,7 +28,7 @@ public class MessageListener implements PluginMessageListener
 
             for (Player p : Bukkit.getServer().getOnlinePlayers())
             {
-                p.sendPluginMessage(Main.getInstance(), "Cord", out.toByteArray());
+                p.sendPluginMessage(Main.getInstance(), "BungeeCord", out.toByteArray());
             }
 
             // Shutdown the server after about 5 seconds. Just to make sure *most* of the
