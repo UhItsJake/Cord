@@ -1,6 +1,6 @@
-package co.sysvoid.cord;
+package co.sysvoid.cord.bungee;
 
-import co.sysvoid.cord.commands.CommandCord;
+import co.sysvoid.cord.bungee.commands.CommandCord;
 import net.md_5.bungee.api.plugin.Plugin;
 
 public class Main extends Plugin

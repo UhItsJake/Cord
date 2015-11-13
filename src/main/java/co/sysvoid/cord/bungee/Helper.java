@@ -1,6 +1,5 @@
-package co.sysvoid.cord;
+package co.sysvoid.cord.bungee;
 
-import com.google.common.io.ByteStreams;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.ComponentBuilder;

@@ -1,6 +1,6 @@
-package co.sysvoid.cord.commands;
+package co.sysvoid.cord.bungee.commands;
 
-import co.sysvoid.cord.Helper;
+import co.sysvoid.cord.bungee.Helper;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.ProxyServer;
