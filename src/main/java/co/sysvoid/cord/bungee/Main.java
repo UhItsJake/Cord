@@ -11,6 +11,9 @@ public class Main extends Plugin
         getLogger().info("Enabled");
         Helper.setPlugin(this);
 
+        getProxy().registerChannel("BungeeCord");
+        getProxy().registerChannel("Cord");
+        
         getProxy().getPluginManager().registerListener(this, new EventListener());
         getProxy().getPluginManager().registerCommand(this, new CommandCord());
     }
