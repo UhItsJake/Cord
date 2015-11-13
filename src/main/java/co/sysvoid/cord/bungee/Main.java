@@ -12,7 +12,6 @@ public class Main extends Plugin
         Helper.setPlugin(this);
 
         getProxy().getPluginManager().registerListener(this, new EventListener());
-
         getProxy().getPluginManager().registerCommand(this, new CommandCord());
     }
 

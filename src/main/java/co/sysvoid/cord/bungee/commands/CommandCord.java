@@ -38,6 +38,12 @@ public class CommandCord extends Command
                             .append("/cord server clear <name> [fallback] - " + Helper.getLang("clear_fallback", "Clears players from a server [and sends players to the fallback server]") + ".").color(ChatColor.GRAY)
                             .create()
             );
+
+            player.sendMessage(
+                    new ComponentBuilder(Helper.getPrefix("Cord"))
+                            .append("/cord server shutdown <name> <fallback> - " + Helper.getLang("shutdown_fallback", "Powers off a server, and sends the players to a fallback server") + ".").color(ChatColor.GRAY)
+                            .create()
+            );
         }
 
         if (player.hasPermission("cord.maintenance.toggle"))
@@ -164,6 +170,24 @@ public class CommandCord extends Command
                                         ).color(ChatColor.GRAY)
                                         .create()
                         );
+                    } else if (args[1].equalsIgnoreCase("shutdown") && args.length == 4)
+                    {
+                        ServerInfo fallback = ProxyServer.getInstance().getServerInfo(args[3]);
+
+                        if (fallback == null)
+                        {
+                            player.sendMessage(
+                                    new ComponentBuilder(Helper.getPrefix("Cord"))
+                                            .append(
+                                                    Helper.getLang("fallback_404", "Fallback server not found.")
+                                            ).color(ChatColor.GRAY)
+                                            .create()
+                            );
+                            return;
+                        }
+
+                        // @Todo: Send: Cord [Power] -> Shutdown plugin message.
+                        // Please see https://github.com/SysVoid/Cord/blob/master/src/main/java/co/sysvoid/cord/spigot/MessageListener.java
                     } else if (args[1].equalsIgnoreCase("clear") && args.length == 3)
                     {
                         for (ProxiedPlayer plyr : ProxyServer.getInstance().getServers().get(args[2]).getPlayers())

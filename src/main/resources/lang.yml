@@ -19,5 +19,6 @@ enabled: 'ENABLED'
 disabled: 'DISABLED'
 maintenance_has_been: 'Maintenance mode has been'
 unavailable_console: 'This command is unavailable in the console, sorry!'
+shutdown_fallback: 'Powers off a server, and sends the players to a fallback server'
 
 # Did you read the note at the top?
